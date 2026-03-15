@@ -165,3 +165,11 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+const ham = document.querySelector(".ham1");
+const sidebar = document.querySelector(".sidebar");
+
+ham.addEventListener("click", () => {
+    sidebar.classList.toggle("active");
+});
+
