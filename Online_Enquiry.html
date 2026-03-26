@@ -63,28 +63,28 @@
         <div id="O_tag">
             <img src="images/support.png" alt="" width="600px">
             <div id="F_div">
-                <form action="http://localhost:3000/api/enquiry" method="POST" class="form" id="I_form"> 
+                <form  method="POST" class="form" id="I_form"> 
                     <div id="tag"> 
                         
                        
-                         <input type="text" id="username" name="name" placeholder="Your name " required>
+                         <input type="text" id="username" name="name" placeholder="Your name " autocomplete="name" required>
                     </div>
                     <div id="tag">
                         
                         
-                        <input type="text" id="userphone" name="Phonenumber" placeholder="Your mobile  number" required>
+                        <input type="text" id="userphone" name="Phone" placeholder="Your mobile  number" autocomplete="phone" required>
 
                     </div>
                     <div id="tag">
                         
-                       <input type="email" id="useremail" name="email" placeholder="your Email" required>
+                       <input type="email" id="useremail" name="email" placeholder="your Email" autocomplete="email" required>
                        
                     </div>
                     <div id="tag">
                         
                         <textarea type="textarea" id="usermessage" name="message" placeholder="Enter the message"></textarea>
                     </div>
-                    <button type="button" class="btn btn-outline-primary"> Submit </button>
+                    <button type="submit" class="btn btn-outline-primary"> Submit </button>
                 
                 </form>
             </div>
@@ -162,5 +162,6 @@
 </footer>
 
 
+<script src="Javascript/script.js"></script>
 </body>
 </html>

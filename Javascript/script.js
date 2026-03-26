@@ -173,11 +173,14 @@ ham.addEventListener("click", () => {
     sidebar.classList.toggle("active");
 });
 
-document.getElementById('sub').addEventListener('submit',async function(event){
+document.getElementById('I_form').addEventListener('submit',async function(event){
   event.preventDefault();
 
   const formDate = {
-    name: document.getElementById('name-input').value,
+    name: document.getElementById('username').value,
+    Phone: document.getElementById('userphone').value,
+    email : document.getElementById('useremail').value,
+    message: document.getElementById('usermessage').value
   }
   try{
 
