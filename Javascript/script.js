@@ -173,3 +173,33 @@ ham.addEventListener("click", () => {
     sidebar.classList.toggle("active");
 });
 
+document.getElementById('sub').addEventListener('submit',async function(event){
+  event.preventDefault();
+
+  const formDate = {
+    name: document.getElementById('name-input').value,
+  }
+  try{
+
+    const response = await fetch('http://localhost:3000/api/enquiry',{
+      method : 'POST',
+      headers :{
+        'Content-type':'application/json'
+      },
+      body: JSON.stringify(formDate)
+    });
+
+
+    const result = await  response.json();
+    if(response.ok){
+      alert("Thanks! We will contact you soon.");
+    }
+    else{
+      alert("Something went wrong");
+    }
+  }
+  catch (error){
+    console.error('Error',error);
+  }
+});
+
