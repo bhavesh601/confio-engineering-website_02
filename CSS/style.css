@@ -2,6 +2,8 @@
   box-sizing: border-box;
 }
 html, body {
+    margin: 0;
+    padding: 0;
   overflow-x: hidden;
   width: 100%;
 }
@@ -11,10 +13,15 @@ html, body {
     box-sizing: border-box;
     /* background-color: #FFFFFF; */
 }
-
+.hero {
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    padding-top: 100px;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}   
 header{
     width: 100%;
-    height: 80px;
     border: solid #CBD5E1 2px;
     background-color:  #dce8f1;
     display: flex;
@@ -22,9 +29,27 @@ header{
     justify-content: space-between;
     position: fixed;
     top: 0;
-    
     z-index: 1000;
 }
+
+/* header.main {
+    height: 80px !important;
+    flex-direction: row !important;
+    padding: 0 !important;
+    align-items: center;
+} */
+
+/* header.main {
+    display: flex;
+    align-items: center;
+    height: 100%;
+} */
+
+/* header.mobile  {
+    display: flex;
+    align-items: center;
+    height: 100%;
+} */
 /* header h1{
     background-color: #F3F4F6;
     color: #F3F4F6;
@@ -33,10 +58,8 @@ header{
     width: 600px;
     display: flex;
     justify-content: space-between;
-    padding-top: 20px;
+    align-items: center;
     padding-right: 40px;
-    
-
 }
 #a{
    font-size: 18px;
@@ -52,7 +75,7 @@ header{
 }
 .carousel-item{
     height: 400px;
-    margin-top: 75px;
+    margin-top: 80px;
 }
 /* .carousel-item img{
     height: 100%;
@@ -188,8 +211,7 @@ header{
     position: relative;
     color: white;
     padding: 60px;
-    margin-top: 60px;
-    
+    margin-top: 80px;
 }
 
 .main_tag{
@@ -350,7 +372,7 @@ header{
     transform: translateY(0);
 }
 .mobile{
-        display: none;
+        display: none ;
 }
 .sidebar{
     display: none;
@@ -403,15 +425,24 @@ body{
     line-height: 1.6;
 }
 @media (max-width: 1200px) {
+    .mobile{
+        display: flex;
+    }
     #contact2{
         padding-left: 0px
-    };
-    header {
-        flex-direction: column;
-        height: auto;
-        padding: 10px 0;
     }
-
+    header.mobile {
+        display: flex;
+        flex-direction: row !important ;
+        height: 90px;
+        padding: 0;
+    }
+    header.main {
+        display: none !important;
+    }
+    .mobile{
+        display: visible;
+    }
     #carouselExample{
         display: none;
     }
@@ -459,26 +490,13 @@ body{
         width: 90%;
         margin-top: 20px;
     }
-    .mobile{
-    width: 100%;
-    height: 90px;
-    border: solid #CBD5E1 2px;
-    background-color:  #dce8f1;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    
-    z-index: 1000;
-    }
     .main{
         display: none;
     }
-    .ham1{
-       padding-right: 20px;
+    /* .ham1{
+       padding-right: 200px;
        padding-top: 8px;
-    }
+    } */
     #foot{
         width: 100%;
     }
