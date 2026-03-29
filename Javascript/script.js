@@ -207,3 +207,14 @@ document.getElementById('I_form').addEventListener('submit',async function(event
   }
 });
 
+const express = require('express');
+const cors = require('cors'); // Add this line!
+
+const app = express();
+
+// Add this line to allow your Netlify site to talk to your server
+app.use(cors({
+    origin: 'https://confioengineeringsolutions.netlify.app'
+})); 
+
+// ... the rest of your code ...
