@@ -15,7 +15,7 @@ html, body {
 }
 .hero {
     width: 100%;
-    min-height: calc(100vh - 80px);
+    height: 200px;
     padding-top: 100px;
     box-sizing: border-box;
     /* overflow: hidden; */
@@ -204,22 +204,26 @@ header{
 
 .hero{
     width: 100%;
-    height: 600px;
+    height: 100%;
     background-image: url("../images/back_main.jpg.jpeg");
     background-size: cover;
     background-position: center;
     position: relative;
     color: white;
-    padding: 60px;
+    padding-top: 60px;
+    padding-right: 40px;
+    padding-left: 40px;
     margin-top: 80px;
 }
 
 .main_tag{
+    padding-top: 15px;
     font-size: 34px;
     font-weight:700;
     width:100%;
-    height: 66px;
+    height: 100px;
     text-align: center;
+    align-items: center;
     margin-top: -40px;
     margin-bottom: 10px;
 }
@@ -235,16 +239,16 @@ header{
 
 .image{
     margin-top: 35px;
-    height: 100%;
+    height: 500px;
     display: flex;
     justify-content: center;
 }
 
 .image img {
-    width: 80%;
+    width: 70%;
     border-radius: 8px;
     border: 2px solid rgba(255,255,255,0.3);
-    height: 370px;
+    height: 400px;
     
 }
 #l{
@@ -424,12 +428,26 @@ body{
     max-width: 500px;
     line-height: 1.6;
 }
+#support_img{
+    width: 40%;
+}
+#F_div{
+    border: solid rgb(133, 132, 159) 2px;
+    border-radius: 0.3rem;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin-left: 50px;
+}
 @media (max-width: 1200px) {
     .mobile{
         display: flex;
     }
     #contact2{
         padding-left: 0px
+    }
+    #support_img{
+        width: 100%;
     }
     header.mobile {
         display: flex;
@@ -504,6 +522,7 @@ body{
         width: 100%;
 
     }
+    
  
 #anchor1{
     display: flex;
@@ -582,6 +601,15 @@ footer #contact{
         max-width: 500px;
         line-height: 1.6;
     }
+    #O_tag{
+    
+    flex-direction: column;
+    
+  
+    }
+    #F_div{
+        margin-left: 0px;
+    }
     .map {
     border-radius: 1rem;
     padding-left: 50px;
@@ -593,9 +621,21 @@ footer #contact{
     border-radius: 1rem;
     border-right: rgba(255,255,255,0.3);
     }
+    .about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    font-size: larger;
+    font-weight: 400;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    }
  
  
-
+    
     
     .contact-icon{
         color: white;
@@ -612,6 +652,9 @@ footer #contact{
     
     
     }
+    #hero{
+        height: 100%;
+    }
     #follow{
     color: white;
     padding-left: 50px;
@@ -622,6 +665,14 @@ footer #contact{
     
 
     }
+    #F_div{
+    border: solid rgb(133, 132, 159) 2px;
+    border-radius: 0.3rem;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin-left: 50px;
+}
 
 
 }
@@ -724,14 +775,7 @@ footer #contact{
     padding-bottom: 20px;
     width: 85%;
 }
-#F_div{
-    border: solid rgb(133, 132, 159) 2px;
-    border-radius: 0.3rem;
-    padding: 20px;
-    width: 100%;
-    max-width: 500px;
-    margin-left: 50px;
-}
+
 #O_tag{
     display: flex;
     justify-content: center;
@@ -746,4 +790,16 @@ footer #contact{
 #tag input{
     width: 100%;
     box-sizing: border-box;
+}
+.about{
+    /* display: flex;
+    /* flex-direction: row; */
+    /* justify-content: center;
+    align-items: center; */ 
+    padding: 100px;
+    font-size: larger;
+    font-weight: 400;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    
 }
