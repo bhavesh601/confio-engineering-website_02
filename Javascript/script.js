@@ -184,7 +184,7 @@ document.getElementById('I_form').addEventListener('submit',async function(event
   }
   try{
 
-    const response = await fetch('http://localhost:3000/enquiry',{
+    const response = await fetch('http:confio-backend-production.up.railway.app/enquiry',{
       method : 'POST',
       headers :{
         'Content-type':'application/json'
