@@ -173,37 +173,43 @@ ham.addEventListener("click", () => {
     sidebar.classList.toggle("active");
 });
 
-document.getElementById('I_form').addEventListener('submit',async function(event){
+document.getElementById('I_form').addEventListener('submit', async function(event) {
   event.preventDefault();
 
-  const formDate = {
+  const formData = {
     name: document.getElementById('username').value,
     phone: document.getElementById('userphone').value,
-    email : document.getElementById('useremail').value,
+    email: document.getElementById('useremail').value,
     message: document.getElementById('usermessage').value
-  }
-  try{
+  };
 
-    const response = await fetch('confio-backend-production.up.railway.app',{
-      method : 'POST',
-     
-      headers :{
-        'Content-type':'application/json'
+  try {
+    const response = await fetch('https://confio-backend-production.up.railway.app/enquiry', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
       },
-      body: JSON.stringify(formDate)
+      body: JSON.stringify(formData)
     });
 
+    const text = await response.text();
+    let result = {};
 
-    const result = await  response.json();
-    if(response.ok){
-      alert("Thanks! We will contact you soon.");
+    try {
+      result = text ? JSON.parse(text) : {};
+    } catch (e) {
+      console.error("Invalid JSON response:", text);
     }
-    else{
-      alert("Something went wrong");
+
+    if (response.ok) {
+      alert(result.message || "Thanks! We will contact you soon.");
+      document.getElementById('I_form').reset();
+    } else {
+      alert(result.error || result.message || "Something went wrong");
     }
-  }
-  catch (error){
-    console.error('Error',error);
+  } catch (error) {
+    console.error('Error:', error);
+    alert("Server error. Please try again later.");
   }
 });
 
