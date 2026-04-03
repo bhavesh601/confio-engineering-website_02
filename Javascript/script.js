@@ -184,7 +184,7 @@ document.getElementById('I_form').addEventListener('submit',async function(event
   }
   try{
 
-    const response = await fetch('https://confio-backend-production.up.railway.app/enquiry',{
+    const response = await fetch('confio-backend-production.up.railway.app',{
       method : 'POST',
      
       headers :{
@@ -207,11 +207,4 @@ document.getElementById('I_form').addEventListener('submit',async function(event
   }
 });
 
-const response = await fetch('https://confio-backend-production.up.railway.app/enquiry', {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json'  // Capital T in Type
-  },
-  credentials: 'include',
-  body: JSON.stringify(formDate)
-});
+
