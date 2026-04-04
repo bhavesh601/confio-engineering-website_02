@@ -771,6 +771,15 @@ footer #contact{
     margin: 40px auto;
     margin-top: 200px;
 }
+.product-card-1{
+     width: 100%;
+    max-width: 300px;        /* wider card */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin: 40px auto;
+    margin-top: 200px;
+}
 #product_main{
     display: flex;
     justify-content: center;
@@ -847,15 +856,17 @@ footer #contact{
     .product-card {
         flex: 1 1 calc(50% - 10px);
         max-width: 100%;
+        margin-top: 20px;
     }
+    
 
     .card-heading h3 {
         font-size: 0.9rem;    /* smaller heading on phone */
     }
 
     .carousel-inner,
-    .carousel-item,
-    .carousel-item img {
-        height: 180px;        /* shorter carousel on phone */
+    .carousel-item
+     {
+        height: 200px;        /* shorter carousel on phone */
     }
 }
