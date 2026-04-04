@@ -847,6 +847,44 @@ footer #contact{
 .card-heading {
     transition: background-color 0.3s ease;
 }
+.product-card-1,
+.product-card-2 {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.product-card-1:hover,
+.product-card-2:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Image zoom on card hover */
+.product-card-1:hover .carousel-item.active img,
+.product-card-1:hover img,
+.product-card-2:hover .carousel-item.active img,
+.product-card-2:hover img {
+    transform: scale(1.05);
+    transition: transform 0.4s ease;
+}
+
+.product-card-1 img,
+.product-card-2 img {
+    transition: transform 0.4s ease;
+}
+
+/* Heading color change on hover */
+.product-card-1:hover .card-heading,
+.product-card-2:hover .card-heading {
+    background-color: #1a42b1;
+    transition: background-color 0.3s ease;
+    color: white;
+}
+
+.product-card-1 .card-heading,
+.product-card-2 .card-heading {
+    transition: background-color 0.3s ease;
+}
 /* Below 1200px - 2 per row */
 @media (max-width: 1200px) {
     .product-card {
@@ -854,7 +892,9 @@ footer #contact{
         max-width: 450px;
         margin-top: 20px;
     }
-   
+    .product-card-1{
+        margin-top: 100px;
+    }
 }
 
 /* Mobile - 2 per row but smaller */
