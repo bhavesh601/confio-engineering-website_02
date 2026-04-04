@@ -756,7 +756,7 @@ footer #contact{
         color: black;
         
         background-color: rgb(237, 237, 237);
-        height: 35px;
+        height: 30px;
 }
 .card-heading h3 {
         
@@ -772,6 +772,15 @@ footer #contact{
     margin-top: 200px;
 }
 .product-card-1{
+     width: 100%;
+    max-width: 300px;        /* wider card */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin: 40px auto;
+    margin-top: 200px;
+}
+.product-card-2{
      width: 100%;
     max-width: 300px;        /* wider card */
     border-radius: 10px;
@@ -843,7 +852,9 @@ footer #contact{
     .product-card {
         flex: 1 1 calc(50% - 20px);
         max-width: 450px;
+        margin-top: 20px;
     }
+   
 }
 
 /* Mobile - 2 per row but smaller */
