@@ -839,7 +839,7 @@ footer #contact{
 
 /* Optional: heading color change on hover */
 .product-card:hover .card-heading {
-    background-color: #1a42b1;   /* slightly darker blue */
+    background-color: #102257;   /* slightly darker blue */
     transition: background-color 0.3s ease;
     color: white;
 }
@@ -876,7 +876,7 @@ footer #contact{
 /* Heading color change on hover */
 .product-card-1:hover .card-heading,
 .product-card-2:hover .card-heading {
-    background-color: #1a42b1;
+    background-color: #102257;
     transition: background-color 0.3s ease;
     color: white;
 }
