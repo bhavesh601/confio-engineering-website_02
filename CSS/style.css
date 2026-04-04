@@ -32,40 +32,22 @@ header{
     z-index: 1000;
 }
 
-/* header.main {
-    height: 80px !important;
-    flex-direction: row !important;
-    padding: 0 !important;
-    align-items: center;
-} */
 
-/* header.main {
-    display: flex;
-    align-items: center;
-    height: 100%;
-} */
-
-/* header.mobile  {
-    display: flex;
-    align-items: center;
-    height: 100%;
-} */
-/* header h1{
-    background-color: #F3F4F6;
-    color: #F3F4F6;
-} */
 #anchor{
-    width: 600px;
+    width: 1000px;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
-    padding-right: 40px;
+    justify-content: end;
+    padding-right: 2px;
 }
 #a{
+   width: 100%;
    font-size: 18px;
+   text-align: center;
    text-decoration: none;
    color: black;
-   padding: 4px;
+   padding: 2px;
 }
 #a:hover{
     color: #184abf;
