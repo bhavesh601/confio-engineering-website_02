@@ -852,7 +852,9 @@ footer #contact{
         gap: 10px;
         padding: 10px;
     }
-
+    .d-block{
+        width: 500px;
+    }
     .product-card {
         flex: 1 1 calc(50% - 10px);
         max-width: 100%;
@@ -867,6 +869,9 @@ footer #contact{
     .carousel-inner,
     .carousel-item
      {
-        height: 200px;        /* shorter carousel on phone */
+        height: 300px;        /* shorter carousel on phone */
+    }
+    .carousel-item{
+        height: 450px;
     }
 }
