@@ -707,60 +707,7 @@ footer #contact{
     border-right: rgba(255,255,255,0.3);
 }
 
-/* @media (max-width : 1000px) {
-    #contact{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        gap: 10px;
-        margin-bottom: 8px;
-        
-        
-    }
-    #Mmap{
-        height: 200px;
-        width: 200px;
-    }
-    #Em{
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    margin-bottom: 8px;
-    }
 
-    #Em span{
-        max-width: 500px;
-        line-height: 1.6;
-    }
-    .map {
-    border-radius: 1rem;
-    padding-left: 50px;
-    
-    width: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 1rem;
-    border-right: rgba(255,255,255,0.3);
-    }
- 
-
-    .contact-icon{
-        color: white;
-        font-size: 18px;
-        min-width: 25px;
-    }
-    #contact1{
-    color: white;
-    padding-left: 50px;
-    padding-bottom: 50px;
-    padding-top: 50px;
-    border-right: 0px ;
-    border-bottom: 2px solid rgba(255,255,255,0.3);
-    
-    } */
-/* } */
 #I_form{
     display: flex;
     flex-direction: column;
@@ -802,4 +749,75 @@ footer #contact{
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
     
+}
+.card-heading{
+        text-align: center;
+        color: black;
+        background-color: rgb(237, 237, 237);
+        height: 45px;
+}
+.product-card {
+    width: 100%;
+    max-width: 400px;        /* wider card */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin: 40px auto;
+    margin-top: 200px;
+}
+#product_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.carousel-inner {
+    height: 450px;   
+    width: 400px;        /* taller box */
+    overflow: hidden;
+    background-color: #ffffff;  /* dark bg for portrait images */
+}
+
+.carousel-item {
+    height: 350px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 85%;
+    object-fit: contain;     
+    object-position: center;
+    background-color: #ffffff;  
+}
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);          /* lifts the card up */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);  /* deeper shadow */
+}
+
+/* Image zoom on card hover */
+.product-card:hover .carousel-item.active img,
+.product-card:hover img {
+    transform: scale(1.05);
+    transition: transform 0.4s ease;
+}
+
+.product-card img {
+    transition: transform 0.4s ease;
+}
+
+/* Optional: heading color change on hover */
+.product-card:hover .card-heading {
+    background-color: #1a42b1;   /* slightly darker blue */
+    transition: background-color 0.3s ease;
+    color: white;
+}
+
+.card-heading {
+    transition: background-color 0.3s ease;
 }
