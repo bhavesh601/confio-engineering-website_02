@@ -989,6 +989,14 @@ footer #contact{
     
     font-weight: 700; 
 }
+#ser_h1{
+        margin-top: 80px; 
+        color: white; 
+        background-image: linear-gradient(rgba(26, 46, 90, 0.85), rgba(26, 46, 90, 0.85)),url('metal-texture.jpg');
+        background-size: cover;background-position: center;padding: 60px 80px; text-align: center; font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 700;font-size: 3rem;color: white;
+        letter-spacing: 3px;text-transform: uppercase;
+    }
 #service_p{
   font-family: 'Inter', sans-serif;
   font-weight: 400;
@@ -1031,5 +1039,167 @@ footer #contact{
     transform: scale(1.02);
     box-shadow: 1px 1px 1px black;
 }
+@media (max-width: 576px) {
+    #service {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 16px;
+        gap: 16px;
+        background-color: #f4f6f9;
+        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%231a2e5a' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
 
+    #Block {
+        display: flex;
+        flex-direction: column;  /* ← stack image on top, text below */
+        align-items: center;
+        width: 100%;
+        border: 0.5px solid grey;
+        border-radius: 0.5rem;
+        padding: 12px;
+        margin: 0;
+        background-color: rgb(254, 251, 251);
+        transition: 0.3s ease;
+    }
 
+    #Block:hover {
+        transform: scale(1.02);
+        box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+    }
+
+    #img1 {
+        width: 100%;
+    max-width: 320px;
+    height: 220px;          /* equal to or close to width for square feel */
+    object-fit: cover;
+    border-radius: 8px;     /* remove the huge border-radius, just subtle corners */
+    flex: unset;
+    aspect-ratio: 1 / 1;   /* forces perfect square */
+    }
+    #ser_h1{
+        margin-top: 80px; 
+        color: white; 
+        background-image: linear-gradient(rgba(26, 46, 90, 0.85), rgba(26, 46, 90, 0.85)),url('metal-texture.jpg');
+        background-size: cover;background-position: center;padding: 60px 30px; text-align: center; font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 700;font-size: 3rem;color: white;
+        letter-spacing: 3px;text-transform: uppercase;
+    }
+    #text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 14px 8px 4px 8px;
+        width: 100%;
+    }
+
+    #service_card {
+        background: transparent;
+        border-left: 6px double #1a2e5a;
+        padding-left: 12px;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #1a2e5a;
+        margin-bottom: 8px;
+    }
+
+    #service_p {
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 0.95rem;
+        line-height: 1.7;
+        color: #444;
+        text-align: left;
+    }
+}
+@media (max-width: 1200px) {
+    #service {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 16px;
+        gap: 16px;
+        background-color: #f4f6f9;
+        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%231a2e5a' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    #Block {
+        display: flex;
+        flex-direction: column;  /* ← stack image on top, text below */
+        align-items: center;
+        width: 100%;
+        border: 0.5px solid grey;
+        border-radius: 0.5rem;
+        padding: 12px;
+        margin: 0;
+        background-color: rgb(254, 251, 251);
+        transition: 0.3s ease;
+    }
+
+    #Block:hover {
+        transform: scale(1.02);
+        box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+    }
+
+    #img1 {
+        width: 100%;
+    max-width: 320px;
+    height: 220px;          /* equal to or close to width for square feel */
+    object-fit: cover;
+    border-radius: 8px;     /* remove the huge border-radius, just subtle corners */
+    flex: unset;
+    aspect-ratio: 1 / 1;   /* forces perfect square */
+    }
+    #ser_h1{
+        margin-top: 80px; 
+        color: white; 
+        background-image: linear-gradient(rgba(26, 46, 90, 0.85), rgba(26, 46, 90, 0.85)),url('metal-texture.jpg');
+        background-size: cover;background-position: center;padding: 60px 30px; text-align: center; font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 700;font-size: 3rem;color: white;
+        letter-spacing: 3px;text-transform: uppercase;
+    }
+    #text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 14px 8px 4px 8px;
+        width: 100%;
+    }
+
+    #service_card {
+        background: transparent;
+        border-left: 6px double #1a2e5a;
+        padding-left: 12px;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #1a2e5a;
+        margin-bottom: 8px;
+    }
+
+    #service_p {
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 0.95rem;
+        line-height: 1.7;
+        color: #444;
+        text-align: left;
+    }
+}
+#index_main{
+    height: 600px;
+    background-color: #0d1b2a;
+    background-image: radial-gradient(circle, rgba(255,255,255,0.07) 1px, transparent 1px);
+    background-size: 22px 22px;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 80px 20px; */
+    text-align: center;
+}
