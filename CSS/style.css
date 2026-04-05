@@ -718,8 +718,8 @@ footer #contact{
 
 #O_tag{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    align-items: start;
     margin-top: 120px;
     margin-bottom: 200px;
 }
@@ -1213,4 +1213,17 @@ footer #contact{
     justify-content: center;
     /* padding: 80px 20px; */
     text-align: center;
+}
+#cont_div{
+    border: 2px solid rgb(177, 176, 176);
+    padding: 20px;
+}
+
+/* Title text on top of image */
+#head_c h2 {
+    color: #ffffff;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
 }
