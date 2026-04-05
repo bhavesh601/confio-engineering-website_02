@@ -933,7 +933,7 @@ footer #contact{
   text-align: center;
   position: relative;
   overflow: hidden;
-  margin-top: 85px;
+  margin-top: 65px;
 }
 
 .gallery-hero::before {
@@ -1001,7 +1001,7 @@ footer #contact{
     font-weight: 700; 
 }
 #ser_h1{
-        margin-top: 80px; 
+        margin-top: 70px; 
         color: white; 
         background-image: linear-gradient(rgba(26, 46, 90, 0.85), rgba(26, 46, 90, 0.85)),url('metal-texture.jpg');
         background-size: cover;background-position: center;padding: 60px 80px; text-align: center; font-family: 'Barlow Condensed', sans-serif;
@@ -1167,7 +1167,7 @@ footer #contact{
     aspect-ratio: 1 / 1;   /* forces perfect square */
     }
     #ser_h1{
-        margin-top: 80px; 
+        margin-top: 65px; 
         color: white; 
         background-image: linear-gradient(rgba(26, 46, 90, 0.85), rgba(26, 46, 90, 0.85)),url('metal-texture.jpg');
         background-size: cover;background-position: center;padding: 60px 30px; text-align: center; font-family: 'Barlow Condensed', sans-serif;
