@@ -209,6 +209,13 @@ header{
     margin-top: -40px;
     margin-bottom: 10px;
 }
+/* .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    background-color: #dce8f5;
+} */
 
 .para{
     width: 100%;
@@ -434,14 +441,15 @@ body{
     header.mobile {
         display: flex;
         flex-direction: row !important ;
-        height: 90px;
-        padding: 0;
+        height: 65px;
+        padding-top: 8px;
     }
     header.main {
         display: none !important;
     }
     .mobile{
         display: visible;
+        height: 80px;
     }
     #carouselExample{
         display: none;
