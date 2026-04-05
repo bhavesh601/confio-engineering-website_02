@@ -759,8 +759,8 @@ footer #contact{
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    margin: 40px auto;
-    margin-top: 200px;
+    /* margin: 20px auto; */
+    margin-top: 160px;
 }
 .product-card-2{
      width: 100%;
