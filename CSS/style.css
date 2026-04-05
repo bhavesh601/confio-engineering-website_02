@@ -1216,14 +1216,45 @@ footer #contact{
 }
 #cont_div{
     border: 2px solid rgb(177, 176, 176);
-    padding: 20px;
+    padding: 50px;
+    background-color: #0b1f3a;
+    border-radius: 0.5rem;
+    color: white;
 }
 
-/* Title text on top of image */
-#head_c h2 {
+#head_c {
+    margin-top: 0px;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: relative;
+    overflow: hidden;
+   
+}
+
+#head_c::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    right: 0; bottom: 0;
+    background-image: url("../images/Contact/img.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(2px);        
+    z-index: 0;
+}
+
+#head_c h1 {
+    position: relative;
+    z-index: 2;              
     color: #ffffff;
     font-family: 'Rajdhani', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     font-weight: 700;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
 }
