@@ -379,7 +379,7 @@ body{
 #contact1{
     color: white;
     padding-left: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 0px;
     border-right: 2px solid rgba(255,255,255,0.3);
     /* height: 290px; */
     padding-right: 40px;
@@ -387,17 +387,19 @@ body{
 #follow{
     color: white;
     padding-left: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
+    /* padding-top: 35px; */
     border-right: 2px solid rgba(255,255,255,0.3);
-    height: 315px;
+    height: 100%;
     padding-right: 40px;
 
 }
 #contact2{
     color: white;
     padding-left: 50px;
-    padding-bottom: 50px;
-    height: 315px;
+    
+    padding-bottom: 20px;
+    height: 100%;
 
 }
 #Mmap{
@@ -673,10 +675,11 @@ footer #contact{
 #contact{
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: start;
         justify-content: center;
         gap: 10px;
         padding-top: 50px;
+        padding-bottom: 50px;
         margin-bottom: 8px;
         width: 100%;
     }
@@ -1204,9 +1207,10 @@ footer #contact{
 }
 #index_main{
     height: 600px;
-    background-color: #0b1f3a;
-    background-image: radial-gradient(circle, rgba(255,255,255,0.08) 1px, transparent 1px);
-background-size: 24px 24px;
+    background-color: #1a2e5a;
+background-color: #1a2e5a;
+background-image: radial-gradient(circle, rgba(255,255,255,0.1) 1.5px, transparent 1.5px);
+background-size: 20px 20px;
     min-height: 300px;
     display: flex;
     align-items: center;
@@ -1224,7 +1228,7 @@ background-size: 24px 24px;
 
 #head_c {
     margin-top: 0px;
-    height: 300px;
+    height: 500px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -1252,17 +1256,18 @@ background-size: 24px 24px;
     z-index: 2;              
     color: #ffffff;
     font-family: 'Rajdhani', sans-serif;
-    font-size: 2.8rem;
+    font-size: 2.9rem;
     font-weight: 700;
     text-align: center;
     letter-spacing: 2px;
     text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
+    padding-left: 50px;
 }
 #info_box {
     background: #0f1e3d;
     border: 1.5px solid #2a4a8a;
     border-radius: 12px;
-    padding: 30px 30px;
+    padding: 20px 20px;
     font-family: 'Rajdhani', sans-serif;
     color: #ffffff;
     display: flex;
@@ -1286,7 +1291,8 @@ background-size: 24px 24px;
 }
 
 #info_box p span.text {
-    flex: 1;                    
+    flex: 1;  
+    font-size: larger;                  
 }
 #social {
     display: flex;
@@ -1351,7 +1357,7 @@ background-size: 24px 24px;
     margin-bottom: 200px;
 }
 #info_box{
-    padding: 30px;
-    margin: 10px;
+    padding: 25px;
+    margin: 15px;
 }
 }
