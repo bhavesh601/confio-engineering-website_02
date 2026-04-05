@@ -720,7 +720,7 @@ footer #contact{
     display: flex;
     justify-content: space-evenly;
     align-items: start;
-    margin-top: 120px;
+    margin-top: 80px;
     margin-bottom: 200px;
 }
 #label{
@@ -1257,4 +1257,101 @@ footer #contact{
     text-align: center;
     letter-spacing: 2px;
     text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
+}
+#info_box {
+    background: #0f1e3d;
+    border: 1.5px solid #2a4a8a;
+    border-radius: 12px;
+    padding: 30px 30px;
+    font-family: 'Rajdhani', sans-serif;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;                  
+}
+
+#info_box p {
+    display: flex;
+    align-items: flex-start;    
+    gap: 12px;                  
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+#info_box p span.icon {
+    font-size: 1.1rem;
+    margin-top: 2px;            
+    flex-shrink: 0;            
+}
+
+#info_box p span.text {
+    flex: 1;                    
+}
+#social {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#social h3 {
+    color: #ffffff;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+#social a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.3s ease;
+}
+
+#social a:hover {
+    color: #c8a400;        
+}
+
+#social a i {
+    font-size: 1.3rem;
+    width: 20px;
+}
+
+
+#social a:hover .fa-facebook   { color: #1877f2; }
+#social a:hover .fa-instagram  { color: #e1306c; }
+#social a:hover .fa-linkedin   { color: #0a66c2; }
+#social a:hover .fa-youtube    { color: #ff0000; }
+#social a:hover .fa-whatsapp   { color: #25d366; }
+#map{
+     width :600px ;
+     height : 450px;
+     border: 0px;
+}
+#info_box{
+    padding: 60px;
+}
+@media (max-width : 1200px){
+    #map{
+        height: 250px;
+        width: 250px;
+        padding: 20px;
+
+    }
+    #O_tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 200px;
+}
+#info_box{
+    padding: 30px;
+    margin: 10px;
+}
 }
