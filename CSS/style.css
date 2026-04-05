@@ -1205,8 +1205,8 @@ footer #contact{
 #index_main{
     height: 600px;
     background-color: #0b1f3a;
-    background-image: radial-gradient(circle, rgba(255,255,255,0.07) 1px, transparent 1px);
-    background-size: 22px 22px;
+    background-image: radial-gradient(circle, rgba(255,255,255,0.08) 1px, transparent 1px);
+background-size: 24px 24px;
     min-height: 300px;
     display: flex;
     align-items: center;
