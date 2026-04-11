@@ -387,7 +387,7 @@ body{
 #follow{
     color: white;
     padding-left: 30px;
-    padding-bottom: 25px;
+    padding-bottom: 27px;
     /* padding-top: 35px; */
     border-right: 2px solid rgba(255,255,255,0.3);
     height: 100%;
@@ -1360,4 +1360,31 @@ background-size: 20px 20px;
     padding: 25px;
     margin: 15px;
 }
+}
+#clients{
+    background-color: #0b1f3a;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+#clients_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    
+}
+#clients_img{
+    display: flex;
+    justify-content: space-evenly   ;
+    align-items: center;
+}
+#clients1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-direction: row;
+   
 }
