@@ -212,5 +212,58 @@ document.getElementById('I_form').addEventListener('submit', async function(even
     alert("Server error. Please try again later.");
   }
 });
+/* ===========================
+   PRODUCT MODAL
+=========================== */
+
+const productModal = document.getElementById("productModal");
+
+const closeModal = document.querySelector(".close-modal");
+
+const cards = document.querySelectorAll(
+".product-card,.product-card-1,.product-card-2"
+);
+
+cards.forEach(card=>{
+
+card.addEventListener("click",()=>{
+
+productModal.classList.add("active");
+
+document.body.style.overflow="hidden";
+
+});
+
+});
+
+closeModal.addEventListener("click",closeProductModal);
+
+productModal.addEventListener("click",(e)=>{
+
+if(e.target===productModal){
+
+closeProductModal();
+
+}
+
+});
+
+document.addEventListener("keydown",(e)=>{
+
+if(e.key==="Escape"){
+
+closeProductModal();
+
+}
+
+});
+
+function closeProductModal(){
+
+productModal.classList.remove("active");
+
+document.body.style.overflow="auto";
+
+}
 
 
