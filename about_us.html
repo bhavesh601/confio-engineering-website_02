@@ -1,168 +1,1239 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Confio Engineering solution</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>Confio Engineering Solutions | Clients</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Orbitron:wght@700&family=Exo+2:wght@700&family=Oxanium:wght@700&display=swap"
+        rel="stylesheet">
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="CSS/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Orbitron:wght@700&family=Exo+2:wght@700&family=Teko:wght@600&family=Michroma&family=Oxanium:wght@700&display=swap" rel="stylesheet">
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700&display=swap" rel="stylesheet">
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-M0KP1ZMRXG"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-M0KP1ZMRXG');
-</script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M0KP1ZMRXG"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-M0KP1ZMRXG');
+    </script>
+
+    <style>
+
+        /* =========================================
+           CLIENTS SECTION
+        ========================================= */
+
+        .clients-section {
+            padding: 0 5% 90px;
+            background: #ffffff;
+        }
+
+        .clients-intro {
+            text-align: center;
+            max-width: 850px;
+            margin: 45px auto 65px;
+        }
+
+        .clients-intro h3 {
+            font-family: 'Exo 2', sans-serif;
+            color: #1a2e5a;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .clients-intro p {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.15rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+
+        /* CATEGORY */
+
+        .client-category {
+            max-width: 1200px;
+            margin: 0 auto 65px;
+        }
+
+        .category-title {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .category-line {
+            width: 5px;
+            height: 38px;
+            background-color: #1a2e5a;
+            border-radius: 3px;
+        }
+
+        .category-title h3 {
+            margin: 0;
+            font-family: 'Exo 2', sans-serif;
+            color: #1a2e5a;
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+
+        /* CLIENT GRID */
+
+        .client-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 22px;
+        }
+
+
+        /* CLIENT CARD */
+
+        .client-card {
+            min-height: 170px;
+            background: #ffffff;
+            border: 1px solid #e3e7ed;
+            border-radius: 10px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            padding: 25px 20px;
+
+            transition: all 0.3s ease;
+
+            box-shadow: 0 5px 18px rgba(20, 45, 80, 0.06);
+        }
+
+        .client-card:hover {
+            transform: translateY(-6px);
+            border-color: #1a2e5a;
+            box-shadow: 0 12px 28px rgba(20, 45, 80, 0.14);
+        }
+
+
+        /* CLIENT LOGO */
+
+        .client-card img {
+            max-width: 180px;
+            max-height: 75px;
+            object-fit: contain;
+            margin-bottom: 18px;
+        }
+
+
+        /* CLIENT NAME */
+
+        .client-name {
+            text-align: center;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #1a2e5a;
+            line-height: 1.25;
+        }
+
+
+        /* SMALL LABEL */
+
+        .client-type {
+            margin-top: 5px;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 0.85rem;
+            color: #777;
+            text-align: center;
+        }
+
+
+        /* FEATURED CLIENT */
+
+        .featured-client {
+            grid-column: span 2;
+            min-height: 190px;
+        }
+
+        .featured-client img {
+            max-width: 220px;
+            max-height: 85px;
+        }
+
+
+        /* EXISTING COMPANY CLIENTS */
+
+        .existing-clients {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .existing-client-box {
+            min-height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border: 1px solid #e3e7ed;
+            border-radius: 10px;
+            background: #fff;
+
+            padding: 25px;
+
+            transition: 0.3s ease;
+        }
+
+        .existing-client-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(20, 45, 80, 0.12);
+        }
+
+        .existing-client-box img {
+            max-width: 190px;
+            max-height: 75px;
+            object-fit: contain;
+        }
+
+
+        /* TRUST STATEMENT */
+
+        .client-bottom {
+            max-width: 1000px;
+            margin: 80px auto 0;
+            text-align: center;
+            padding: 45px 30px;
+
+            background: #f5f8fc;
+            border-radius: 12px;
+            border: 1px solid #e1e7ef;
+        }
+
+        .client-bottom h3 {
+            font-family: 'Exo 2', sans-serif;
+            color: #1a2e5a;
+            font-size: 1.8rem;
+            margin-bottom: 12px;
+        }
+
+        .client-bottom p {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.1rem;
+            color: #555;
+            margin: 0;
+        }
+
+
+        /* =========================================
+           RESPONSIVE
+        ========================================= */
+
+        @media (max-width: 1000px) {
+
+            .client-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .existing-clients {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            .clients-section {
+                padding: 0 20px 60px;
+            }
+
+            .clients-intro {
+                margin: 35px auto 45px;
+            }
+
+            .clients-intro h3 {
+                font-size: 1.5rem;
+            }
+
+            .clients-intro p {
+                font-size: 1rem;
+            }
+
+            .category-title h3 {
+                font-size: 1.4rem;
+            }
+
+            .client-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .existing-clients {
+                grid-template-columns: 1fr;
+            }
+
+            .featured-client {
+                grid-column: span 1;
+            }
+
+        }
+
+    </style>
+
 </head>
+
+
 <body>
 
-<header class="mobile" >
-        <div> 
-            <img src="images/logo.png" alt="" width="80px" style="padding-left: 30px;">
-        </div>
-        <h1 style=" padding-left: 20px;  font-family: 'Exo 2', sans-serif;
-    font-weight: 700;
-    font-size: 1.2rem;
-    color: #1a2e5a;
-    line-height: 1.15;
-    letter-spacing: 0.5px;">Confio Engineering solution PVT LTD</h1>
-        <div class="ham1"> <img src="images/ham.png" width="40px" alt=""></div>
-        <div class="sidebar">
-        <div id="anchor1">
-            <div id="a1"> <a href="index.html" > Home</a> </div>
-            <div id="a1"> <a href="about_us.html" > About us</a></div>
-            <div id="a1"> <a href="services.html"> Services </a></div>
-            <div id="a1">
-                <a href="motor_Sport.html" id="a"> Motor Sport</a>
-            </div>
-            
-            <div id="a1">  <a href="product_gallery.html" > Product Gallery</a></div>
-            <div  id="a1"> <a href="contact_us.html"> Contact us</a> </div>
-        </div>
+
+<!-- =========================================
+     MOBILE HEADER
+========================================= -->
+
+<header class="mobile">
+
+    <div>
+        <img
+            src="images/logo.png"
+            alt="Confio Engineering"
+            width="80px"
+            style="padding-left: 30px;">
     </div>
-    </header>
 
-    <header class="main" >
-        <div style="display: flex; flex-direction: row;justify-content: space-between;"> 
-            <img src="images/logo.png" alt="" width="100px" style="padding-left: 30px;">
-            <h1 style=" padding-left: 10px; font-family: 'Oxanium', sans-serif;font-weight: 700;font-size: 1.4rem;color: #1a2e5a;line-height: 1.15;letter-spacing: 0.5px;text-align: center; padding-top: 24px;margin-bottom: 0px;">Confio Engineering solution PVT LTD</h1>
+    <h1 style="
+        padding-left:20px;
+        font-family:'Exo 2', sans-serif;
+        font-weight:700;
+        font-size:1.2rem;
+        color:#1a2e5a;
+        line-height:1.15;
+        letter-spacing:0.5px;">
+        Confio Engineering solution PVT LTD
+    </h1>
+
+    <div class="ham1">
+        <img src="images/ham.png" width="40px" alt="Menu">
+    </div>
+
+    <div class="sidebar">
+
+        <div id="anchor1">
+
+            <div id="a1">
+                <a href="index.html">Home</a>
+            </div>
+
+            <div id="a1">
+                <a href="about_us.html">About us</a>
+            </div>
+
+            <div id="a1">
+                <a href="services.html">Services</a>
+            </div>
+
+            <div id="a1">
+                <a href="motor_Sport.html">Motor Sport</a>
+            </div>
+
+            <div id="a1">
+                <a href="product_gallery.html">Product Gallery</a>
+            </div>
+
+            <div id="a1">
+                <a href="contact_us.html">Contact us</a>
+            </div>
+
         </div>
-        
-            <div id="anchor">
-            <a href="index.html" id="a"> Home</a>
-            <a href="about_us.html" id="a"> About us</a>
-            <a href="services.html" id="a"> Services </a>
-            <a href="motor_Sport.html" id="a"> Motor Sport</a>
-            <a href="product_gallery.html" id="a"> Product Gallery</a>
-            <a href="contact_us.html" id="a"> Contact</a>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================
+     DESKTOP HEADER
+========================================= -->
+
+<header class="main">
+
+    <div style="
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;">
+
+        <img
+            src="images/logo.png"
+            alt="Confio Engineering"
+            width="100px"
+            style="padding-left:30px;">
+
+        <h1 style="
+            padding-left:10px;
+            font-family:'Oxanium', sans-serif;
+            font-weight:700;
+            font-size:1.4rem;
+            color:#1a2e5a;
+            line-height:1.15;
+            letter-spacing:0.5px;
+            text-align:center;
+            padding-top:24px;
+            margin-bottom:0;">
+            Confio Engineering solution PVT LTD
+        </h1>
+
+    </div>
+
+
+    <div id="anchor">
+
+        <a href="index.html" id="a">Home</a>
+
+        <a href="about_us.html" id="a">About us</a>
+
+        <a href="services.html" id="a">Services</a>
+
+        <a href="motor_Sport.html" id="a">Motor Sport</a>
+
+        <a href="product_gallery.html" id="a">Product Gallery</a>
+
+        <a href="contact_us.html" id="a">Contact</a>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================
+     MAIN
+========================================= -->
+
+<main>
+
+
+    <!-- PAGE TITLE -->
+
+    <h2 style="
+        margin-top:85px;
+        background-color:#1a2e5a;
+        color:#ffffff;
+        font-family:'Exo 2', sans-serif;
+        font-size:1.8rem;
+        font-weight:700;
+        text-align:center;
+        padding:12px 60px;
+        border-radius:6px;
+        letter-spacing:2px;
+        width:100%;">
+
+        TRUSTED BY ENGINEERING & TECHNOLOGY LEADERS
+
+    </h2>
+
+
+
+    <!-- CLIENTS -->
+
+    <section class="clients-section">
+
+
+        <!-- INTRO -->
+
+        <div class="clients-intro">
+
+            <h3>
+                Our Clients & Collaborators
+            </h3>
+
+            <p>
+                We are proud to work with engineering institutions,
+                technology organizations, automotive teams and
+                innovation-driven organizations across India.
+            </p>
+
         </div>
-    </header>
-    <main>
-        
-             <h2 style=" margin-top: 85px; background-color: #1a2e5a;color: #ffffff;font-family: 'Rajdhani', sans-serif;font-size: 1.8rem;font-weight: 700;text-align: center;padding: 12px 60px;border-radius: 6px;letter-spacing: 2px;display: inline-block;color: white; text-align: center; width: 100%; font-family: 'Exo 2', sans-serif;">  Clients </h2>
-      
-        <div id="clients1">
+
+
+
+        <!-- =========================================
+             EXISTING INDUSTRY CLIENTS
+        ========================================== -->
+
+        <div class="client-category">
+
+            <div class="category-title">
+
+                <div class="category-line"></div>
+
+                <h3>
+                    Technology & Industry
+                </h3>
+
+            </div>
+
+
+            <div class="existing-clients">
+
+
+                <!-- Existing Logo 1 -->
+
+                <div class="existing-client-box">
+
+                    <img
+                        src="images/about us/logo 1.png"
+                        alt="Client Logo 1">
+
+                </div>
+
+
+                <!-- Existing Logo 2 -->
+
+                <div class="existing-client-box">
+
+                    <img
+                        src="images/about us/logo 2.png"
+                        alt="Client Logo 2">
+
+                </div>
+
+
+                <!-- Existing Logo 3 -->
+
+                <div class="existing-client-box">
+
+                    <img
+                        src="images/about us/logo 3.png"
+                        alt="Client Logo 3">
+
+                </div>
+
+
+                <!-- Existing Logo 4 -->
+
+                <div class="existing-client-box">
+
+                    <img
+                        src="images/about us/logo 4.png"
+                        alt="Client Logo 4">
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =========================================
+             LEADING ENGINEERING INSTITUTIONS
+        ========================================== -->
+
+        <div class="client-category">
+
+            <div class="category-title">
+
+                <div class="category-line"></div>
+
+                <h3>
+                    Leading Engineering Institutions
+                </h3>
+
+            </div>
+
+
+            <div class="client-grid">
+
+
+                <!-- IIT MADRAS -->
+
+                <div class="client-card featured-client">
+
+                    <!-- Replace with your IIT Madras logo -->
+                    <img
+                        src="images/clients/iit-madras.png"
+                        alt="IIT Madras">
+
+                    <div class="client-name">
+                        IIT Madras
+                    </div>
+
+                    <div class="client-type">
+                        Engineering & Technology
+                    </div>
+
+                </div>
+
+
+
+                <!-- IIT ROORKEE -->
+
+                <div class="client-card featured-client">
+
+                    <!-- Replace with your IIT Roorkee logo -->
+                    <img
+                        src="images/clients/iit-roorkee.png"
+                        alt="IIT Roorkee">
+
+                    <div class="client-name">
+                        IIT Roorkee
+                    </div>
+
+                    <div class="client-type">
+                        Engineering & Technology
+                    </div>
+
+                </div>
+
+
+
+                <!-- IIT KANPUR -->
+
+                <div class="client-card">
+
+                    <!-- Replace with your IIT Kanpur logo -->
+                    <img
+                        src="images/clients/iit-kanpur.png"
+                        alt="IIT Kanpur">
+
+                    <div class="client-name">
+                        IIT Kanpur
+                    </div>
+
+                    <div class="client-type">
+                        Engineering & Research
+                    </div>
+
+                </div>
+
+
+
+                <!-- IISc -->
+
+                <div class="client-card">
+
+                    <!-- Replace with your IISc logo -->
+                    <img
+                        src="images/clients/iisc.png"
+                        alt="Indian Institute of Science">
+
+                    <div class="client-name">
+                        Indian Institute of Science
+                    </div>
+
+                    <div class="client-type">
+                        Research & Technology
+                    </div>
+
+                </div>
+
+
+
+                <!-- NIT RAIPUR -->
+
+                <div class="client-card">
+
+                    <!-- Replace with your NIT Raipur logo -->
+                    <img
+                        src="images/clients/nit-raipur.png"
+                        alt="NIT Raipur">
+
+                    <div class="client-name">
+                        NIT Raipur
+                    </div>
+
+                    <div class="client-type">
+                        Engineering & Technology
+                    </div>
+
+                </div>
+
+
+
+                <!-- MIT WPU -->
+
+                <div class="client-card">
+
+                    <!-- Replace with your MIT-WPU logo -->
+                    <img
+                        src="images/clients/mit-wpu.png"
+                        alt="MIT World Peace University">
+
+                    <div class="client-name">
+                        MIT-WPU
+                    </div>
+
+                    <div class="client-type">
+                        Engineering & Innovation
+                    </div>
+
+                </div>
+
+
+
+                <!-- THIAGARAJAR -->
+
+                <div class="client-card">
+
+                    <!-- Replace with your logo -->
+                    <img
+                        src="images/clients/thiagarajar.png"
+                        alt="Thiagarajar College of Engineering">
+
+                    <div class="client-name">
+                        Thiagarajar College of Engineering
+                    </div>
+
+                    <div class="client-type">
+                        Engineering & Technology
+                    </div>
+
+                </div>
+
+
+
+                <!-- IIITDM -->
+
+                <div class="client-card">
+
+                    <!-- Replace with your logo -->
+                    <img
+                        src="images/clients/iiitdm-jabalpur.png"
+                        alt="IIITDM Jabalpur">
+
+                    <div class="client-name">
+                        IIITDM Jabalpur
+                    </div>
+
+                    <div class="client-type">
+                        Technology & Engineering
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =========================================
+             MOTORSPORT & EV
+        ========================================== -->
+
+        <div class="client-category">
+
+            <div class="category-title">
+
+                <div class="category-line"></div>
+
+                <h3>
+                    Motorsport, Automotive & EV
+                </h3>
+
+            </div>
+
+
+            <div class="client-grid">
+
+
+                <!-- IIT ROORKEE MOTORSPORTS -->
+
+                <div class="client-card featured-client">
+
+                    <!-- Replace with actual logo -->
+                    <img
+                        src="images/clients/iit-roorkee-motorsports.png"
+                        alt="IIT Roorkee Motorsports">
+
+                    <div class="client-name">
+                        IIT Roorkee Motorsports
+                    </div>
+
+                    <div class="client-type">
+                        Motorsport & Engineering
+                    </div>
+
+                </div>
+
+
+
+                <!-- TEAM SAMANVAYA -->
+
+                <div class="client-card featured-client">
+
+                    <!-- Replace with actual logo -->
+                    <img
+                        src="images/clients/team-samanvaya.png"
+                        alt="Team Samanvaya Racing">
+
+                    <div class="client-name">
+                        Team Samanvaya Racing
+                    </div>
+
+                    <div class="client-type">
+                        Formula Student & Motorsport
+                    </div>
+
+                </div>
+
+
+
+                <!-- TEAM NEQUIT -->
+
+                <div class="client-card">
+
+                    <!-- Replace with actual logo -->
+                    <img
+                        src="images/clients/team-nequit-electric.png"
+                        alt="Team Nequit Electric">
+
+                    <div class="client-name">
+                        Team Nequit Electric
+                    </div>
+
+                    <div class="client-type">
+                        Electric Vehicle & Motorsport
+                    </div>
+
+                </div>
+
+
+
+                <!-- HYPERION -->
+
+                <div class="client-card">
+
+                    <!-- Replace with actual logo -->
+                    <img
+                        src="images/clients/hyperion-racing.png"
+                        alt="Hyperion Racing Team">
+
+                    <div class="client-name">
+                        Hyperion Racing Team
+                    </div>
+
+                    <div class="client-type">
+                        Motorsport & Automotive
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =========================================
+             ADDITIONAL INSTITUTIONS
+        ========================================== -->
+
+        <div class="client-category">
+
+            <div class="category-title">
+
+                <div class="category-line"></div>
+
+                <h3>
+                    Academic & Innovation Network
+                </h3>
+
+            </div>
+
+
+            <div class="client-grid">
+
+
+                <!-- ADYPU -->
+
+                <div class="client-card">
+
+                    <img
+                        src="images/clients/adypu.png"
+                        alt="Ajeenkya DY Patil University">
+
+                    <div class="client-name">
+                        Ajeenkya DY Patil University
+                    </div>
+
+                    <div class="client-type">
+                        Engineering & Innovation
+                    </div>
+
+                </div>
+
+
+
+                <!-- GCOE KARAD -->
+
+                <div class="client-card">
+
+                    <img
+                        src="images/clients/gcoe-karad.png"
+                        alt="Government College of Engineering Karad">
+
+                    <div class="client-name">
+                        Government College of Engineering, Karad
+                    </div>
+
+                    <div class="client-type">
+                        Engineering Education
+                    </div>
+
+                </div>
+
+
+
+                <!-- GCOE NAGPUR -->
+
+                <div class="client-card">
+
+                    <img
+                        src="images/clients/gcoe-nagpur.png"
+                        alt="Government College of Engineering Nagpur">
+
+                    <div class="client-name">
+                        Government College of Engineering, Nagpur
+                    </div>
+
+                    <div class="client-type">
+                        Engineering Education
+                    </div>
+
+                </div>
+
+
+
+                <!-- GCOE AMRAVATI -->
+
+                <div class="client-card">
+
+                    <img
+                        src="images/clients/gcoe-amravati.png"
+                        alt="Government College of Engineering Amravati">
+
+                    <div class="client-name">
+                        Government College of Engineering, Amravati
+                    </div>
+
+                    <div class="client-type">
+                        Engineering Education
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =========================================
+             TRUST STATEMENT
+        ========================================== -->
+
+        <div class="client-bottom">
+
+            <h3>
+                Engineering. Innovation. Trust.
+            </h3>
+
+            <p>
+                Building long-term relationships with institutions,
+                engineering teams and technology-driven organizations
+                through reliable engineering solutions.
+            </p>
+
+        </div>
+
+
+    </section>
+
+</main>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer id="foot">
+
+    <div id="contact">
+
+
+        <!-- LOGO -->
+
+        <img
+            src="images/logo2.png"
+            style="border-radius:0.8rem;"
+            alt="Confio Engineering"
+            width="230px"
+            height="190px">
+
+
+
+        <!-- CONTACT -->
+
+        <div id="contact1">
+
+            <h2 style="
+                color:white;
+                font-family:'Exo 2', sans-serif;
+                font-weight:700;
+                font-size:1.5rem;
+                line-height:1.15;
+                letter-spacing:0.5px;">
+                CONTACT US
+            </h2>
+
+
+            <div id="Em">
+
+                <i class="fa-solid fa-envelope contact-icon"></i>
+
+                <span>
+                    Confio : contact@confioengineering.com
+                </span>
+
+            </div>
+
+
+            <div id="Em">
+
+                <i class="fa-solid fa-phone contact-icon"></i>
+
+                <span>
+                    7888066672
+                </span>
+
+            </div>
+
+
+            <div id="Em">
+
+                <i class="fa-brands fa-whatsapp contact-icon"></i>
+
+                <span>
+                    7888066672
+                </span>
+
+            </div>
+
+
+            <div id="Em">
+
+                <i class="fa-solid fa-location-dot contact-icon"></i>
+
+                <span>
+                    S-102, beside Dynomark, near Sai Wajan Kata,
+                    S Block, MIDC, Bhosari, Pune, Pimpri-Chinchwad,
+                    Maharashtra 411026
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- SOCIAL -->
+
+        <div id="follow">
+
+            <h2 style="
+                font-family:'Exo 2', sans-serif;
+                font-weight:700;
+                font-size:1.5rem;
+                line-height:1.15;
+                letter-spacing:0.5px;">
+                FOLLOW US ON
+            </h2>
+
+
+            <div id="social">
+
+
+                <a
+                    href="https://wa.me/917888066672"
+                    target="_blank">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+                    7888066672
+
+                </a>
+
+
+                <a
+                    href="https://in.linkedin.com/in/ashish-kshirsagar-076953133"
+                    target="_blank">
+
+                    <i class="fa-brands fa-linkedin"></i>
+                    LinkedIn
+
+                </a>
+
+
+                <a
+                    href="https://www.facebook.com/share/1CXcrjWVee/"
+                    target="_blank">
+
+                    <i class="fa-brands fa-facebook"></i>
+                    Facebook
+
+                </a>
+
+
+                <a
+                    href="https://www.instagram.com/confioengineering"
+                    target="_blank">
+
+                    <i class="fa-brands fa-instagram"></i>
+                    Instagram
+
+                </a>
+
+
+                <a
+                    href="https://www.youtube.com/@engineeringbazar2493"
+                    target="_blank">
+
+                    <i class="fa-brands fa-youtube"></i>
+                    YouTube
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOTER LINE -->
+
+        <div
+            id="line"
+            style="
+                width:625px;
+                border:1px solid rgba(255,255,255,0.3);">
+
+            <div></div>
+
+        </div>
+
+
+
+        <!-- QUICK LINKS -->
+
+        <div id="contact2">
+
+            <h2 style="
+                font-family:'Exo 2', sans-serif;
+                font-weight:700;
+                font-size:1.5rem;
+                line-height:1.15;
+                letter-spacing:0.5px;">
+                QUICK LINKS
+            </h2>
+
+
             <div>
-                <h2 id="service_card" style="margin-top :85px ; margin-left: 20px; font-size: xx-large;">  Automation & Robotics</h2>
-                <br>
-                <div id="clients_img">
-                <img src="images/about us/logo 1.png" alt="" width="200px">
-                <img src="images/about us/logo 2.png" alt="">
-                <img src="images/about us/logo 3.png" alt="">
-                
-                </div>
+                <a
+                    href="index.html"
+                    style="text-decoration:none;color:white;">
+                    Home
+                </a>
             </div>
+
+
             <div>
-                <h2 id="service_card" style="margin-top :85px ; margin-left: 20px; font-size: xx-large;">Gaming / Racing</h2>
-
-                <img src="images/about us/logo 4.png" style="padding-top: 70px;" alt="">
+                <a
+                    href="about_us.html"
+                    style="text-decoration:none;color:white;">
+                    About us
+                </a>
             </div>
+
+
+            <div>
+                <a
+                    href="services.html"
+                    style="text-decoration:none;color:white;">
+                    Services
+                </a>
+            </div>
+
+
+            <div>
+                <a
+                    href="product_gallery.html"
+                    style="text-decoration:none;color:white;">
+                    Product gallery
+                </a>
+            </div>
+
+
+            <div>
+                <a
+                    href="contact_us.html"
+                    style="text-decoration:none;color:white;">
+                    Contact
+                </a>
+            </div>
+
         </div>
-        <div id="clients1">
-                <h2 id="service_card" style="margin-top :85px ; margin-left: 20px; font-size: xx-large;"> Automobile / EV</h2>
-                <br>
-                <div id="clients_img">
-                
-                </div>
-        </div>
-        
-    </main>
-    
-    
-    <footer id="foot">
-        <div id="contact">
-            <img src="images/logo2.png" style="border-radius: 0.8rem;  " alt=""  width="230px" height="190px" >
-            <div id="contact1">  
-                <h2 style="color: white; font-family: 'Exo 2', sans-serif;font-weight: 700;font-size: 1.5rem;line-height: 1.15;letter-spacing: 0.5px;">  CONTACT US</h2> 
-                <div id="Em">
-                    <i class="fa-solid fa-envelope contact-icon"></i>
-                    <span>Confio : contact@confioengineering.com</span>
-                </div>
 
-                <div id="Em">
-                    <i class="fa-solid fa-phone contact-icon"></i>
-                    <span> 7888066672</span> 
-                </div>
-                <div id="Em">
-                    <i class="fa-brands fa-whatsapp contact-icon"></i>
-                    <span> 7888066672</span>
-                </div>
-                <div id="Em"> 
-                    <i class="fa-solid fa-location-dot contact-icon"></i>
-                    <span> 
-                        S-102, beside Dynomark, near Sai Wajan Kata,
-                        S Block, MIDC, Bhosari,Pune, Pimpri-Chinchwad,
-                        Maharashtra 411026
-                    </span>
-                </div>
-            </div>
-            <div id="follow">
-                <h2 style="font-family: 'Exo 2', sans-serif;font-weight: 700;font-size: 1.5rem;line-height: 1.15;letter-spacing: 0.5px;"> FOLLOW US ON</h2>
-               
-                      <div id="social" >
-    
-                        <a href="https://wa.me/917888066672" target="_blank">
-                            <i class="fa-brands fa-whatsapp"></i> 7888066672
-                    </a>
-                  
-                    <a href="https://in.linkedin.com/in/ashish-kshirsagar-076953133" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i> LinkedIn
-                    </a>
-                    <a href="https://www.facebook.com/share/1CXcrjWVee/" target="_blank">
-                        <i class="fa-brands fa-facebook"></i> Facebook
-                    </a>
-                    <a href="https://www.instagram.com/confioengineering" target="_blank">
-                        <i class="fa-brands fa-instagram"></i> Instagram
-                    </a>
+    </div>
 
-                    <a href="https://www.youtube.com/@engineeringbazar2493" target="_blank">
-                        <i class="fa-brands fa-youtube"></i> YouTube
-                    </a>
 
-   
-</div>
-                
-            </div>
-            <div id="line"  style="width: 625px; border:1px solid rgba(255,255,255,0.3);"> <div> </div> </div>
-            <div id="contact2" >
-                <h2 style="font-family: 'Exo 2', sans-serif;font-weight: 700;font-size: 1.5rem;line-height: 1.15;letter-spacing: 0.5px;">QUICK LINKS </h2>
-                <div> <a href="index.html" style="text-decoration: none; color: white;"> Home</a> </div>
-                <div> <a href="about_us.html" style="text-decoration: none; color: white;"> About us </a> </div>
-                <div> <a href="services.html" style="text-decoration: none; color: white;"> Services </a> </div>
-                <div> <a href="product_gallery.html" style="text-decoration: none; color: white;"> Product gallery</a> </div>
-                <div> <a href="contact_us.html" style="text-decoration: none; color: white;"> Contact</a> </div>
-            </div>
-        </div>
-                <div style="  color: white; text-align: center; height: 30px; background-color:  #0e2d51;"> &copy; Copyright 2026 , all rights reserved with Confio engineering solution</div>
 
-        </footer>
-    <script src="Javascript/script.js"></script>
+    <!-- COPYRIGHT -->
+
+    <div style="
+        color:white;
+        text-align:center;
+        height:30px;
+        background-color:#0e2d51;">
+
+        &copy; Copyright 2026,
+        all rights reserved with Confio Engineering Solution
+
+    </div>
+
+</footer>
+
+
+
+<!-- JAVASCRIPT -->
+
+<script src="Javascript/script.js"></script>
+
 </body>
+
 </html>
